@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib
+	xsi:schemaLocation="
+            http://java.sun.com/xml/ns/javaee 
+            http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="2.1">
+	<tlib-version>1.0</tlib-version>
+	<short-name>taglib</short-name>
+	<uri>/WEB-INF/taglib</uri>
+	<tag>
+		<name>messages</name>
+		<tag-class>com.andreev.rental.tag.MessageTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>tokenGenerate</name>
+		<tag-class>com.andreev.rental.tag.TokenGeneratorTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>tokenInput</name>
+		<tag-class>com.andreev.rental.tag.TokenInputTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+</taglib>
+    

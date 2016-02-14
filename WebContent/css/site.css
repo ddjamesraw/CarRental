@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+html,body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 50% -46px 50%;
+	padding: 0;
+	width: 808px;
+	left: -404px;
+}
+
+.header {
+	background: url(../img/header.png) no-repeat;
+	width: 808px;
+	height: 202px;
+}
+
+.menu {
+	position: absolute;
+	background: url(../img/menu.png) no-repeat;
+	width: 535px;
+	height: 46px;
+	left: 273px;
+	top: 118px;
+}
+
+.menu A {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: MS Reference Sans Serif;
+}
+
+.menu A:visited {
+	color: #fff;
+}
+
+.menu A:active {
+	color: #F00;
+}
+.menu A:hover{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.m_component1,.m_component {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 99px;
+	height: 32px;
+	padding: 4px 0 0 0;
+	box-sizing: content-box;
+}
+
+.m_component1 {
+	padding-left: 20px;
+}
+
+#columns {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;  /* не поддерживается в CSS2 */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#columns > div,
+#columns > noindex > div {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    box-sizing: border-box;  /* не поддерживается в CSS2 */
+}
+#columns > .column_1,
+#columns > noindex > .column_1 {
+    max-width: 254px;
+    min-width: 254px;
+    width: 254px;
+}
+
+#columns > .column_2,
+#columns > noindex > .column_2 {
+    max-width: 514px;
+    min-width: 514px;
+    width: 514px;
+    overflow: hidden;
+}
+.column_1 {
+	padding: 10px;
+}
+
+.column_2 {
+	padding: 10px;
+}
+
+.hFooter,.footer {
+	height: 46px;
+	margin: 0;
+	padding: 0;
+}
+
+.footer {
+	position: absolute;
+	background: url(../img/footer.png) no-repeat;
+	height: 46px;
+	width: 534px;
+	margin: 0 50% 0 50%;
+	left: -130.5px;
+	padding:10px 40px 0 60px;
+	color:#FFF;
+}
+
+.footerText a, .footerText a:active, .footerText a:visited {
+color:#FFF;
+}
+.footerText a:active{
+text-decoration: underline;
+}
+
+table.adminlist {
+	border-width: 2px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-collapse: separate;
+	background-color: white;
+	min-width: 500px;
+	width: 100%;
+}
+
+table.adminlist th,tr,td,table {
+	border-color: red;
+}
+
+table.adminlist th {
+	border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	background-color: white;
+	-moz-border-radius:;
+	text-align: left;
+}
+
+table.adminlist td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	background-color: white;
+	-moz-border-radius:;
+}
+#parent_popup {
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#parent_popup p {
+    display: block;
+    height: 100%;
+}
+#popup {
+    background-color: #fff;
+    width: 384px;
+    overflow: hidden;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: table;
+    z-index: 101;
+    border-radius: 4px;
+}
+#login,#register {
+	display: none;
+	margin-bottom: 0px;
+	border: 1px solid #FF0000;
+	border-radius: 4px;
+}
+.form{
+    width: 256px;
+    overflow: hidden;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: table;
+}
+
+.form-207px{
+	width:207px;
+}
+.imgPicture {
+	margin-top:17px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.imgPicture img {
+    width: 200px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.panel-menu {
+  border-color: #dddddd;
+}
+
+.panel-menu > .panel-heading {
+  color: #FFF;
+  background-color: #F00;
+  border-color: #dddddd;
+}
+
+.panel-menu > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #dddddd;
+}
+
+.panel-menu > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #dddddd;
+}
+.label-red {
+  background-color: #F00;
+}
+
+.label-red[href]:hover,
+.label-red[href]:focus {
+  background-color: #c9302c;
+}

@@ -1,0 +1,32 @@
+-- --------------------------------------------------------------------------------
+-- Routine DDL
+-- Note: comments before and after the routine body will not be stored by the server
+-- --------------------------------------------------------------------------------
+DELIMITER $$
+
+CREATE PROCEDURE `orderCar` (
+`descriptionId` int(11),
+`form` date,
+`to` date
+)
+BEGIN
+	declare `count` int;
+	select count(*) into `count` 
+	from `car_rental`.`order` 
+	join `car_rental`.`car` on  `order`.`car_id` = `car`.`id` 
+	where `car`.`description_id` = `descriptionId`;
+	if `count` > 0 then
+		SELECT `car`.`id`
+		FROM `car_rental`.`car`
+		JOIN `car_rental`.`order` ON `order`.`car_id` = `car`.`id`
+		WHERE `car`.`description_id` = `descriptionId`
+		AND `car`.`is_available` = 1
+		AND ( (`order`.`from` < `form` AND `order`.`to` < `to`) 
+			OR ( `order`.`from` > `from` AND `order`.`to` > `to`) );
+	else
+		SELECT `car`.`id`
+		FROM `car_rental`.`car`
+		WHERE `car`.`description_id` = `descriptionId`
+		AND `car`.`is_available` = 1;
+	end if;
+END
